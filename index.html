@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{Jalex} CompSci Portfolio</title>
+    <!--<link rel="stylsheet" href="style.css">-->
+      <style>
+        div.Navigation{
+            position: fixed;
+            height: 80px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin:0;
+            background-color: #fafafa;
+            line-height: 0px;
+            
+        }
+        div.Title{
+            font-family: 'Montserrat', sans-serif;
+            
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 0px;
+            margin:40px;
+            padding-right: 0;
+            padding:0px;
+
+            float:left;
+            color: rgb(11, 137, 146);
+        }
+        #Title{
+            margin:0;
+            padding:0;
+            font-size: 40px;
+        }
+        div.Subset{
+            border: 2px solid black;
+            border-radius: 6px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 14px;
+            margin-bottom: 14px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 5px;
+            padding-right: 5px;
+            line-height: auto;
+            width: auto;
+            height: 50px;
+            position: relative;
+            float: right;
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            
+            text-align: center;
+            display: inline-block; 
+
+            color: black;
+            
+            
+        }
+        .SubsetText{
+            vertical-align:middle;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-left: 5px;
+            padding-right: 5px;
+            
+        }
+        div.Spacer{
+            position:static;
+            top: 0px;
+            width:100%;
+            height: 80px;
+            background-color: black;
+            z-index: -1;
+        }
+        div.Landing{
+            margin:0;
+            padding:0;
+            height: 90vh;
+            width: 100%;
+            background-color: rgb(11, 137, 146);
+            text-align: center;
+            color:white;
+        }
+        div.About{
+            margin:0;
+            padding:0;
+            padding-top: 20px;
+            padding-bottom: 70px;
+            height: auto;
+            width: 100%;
+            background-color: rgb(216, 156, 104);
+        }
+        div.Taskbar{
+            background-color:rgb(86, 86, 86);
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            width: 750px;
+            height:25px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:auto;
+            margin-bottom: 0;
+        }
+        div.CodeWindow{
+            background-color:rgb(226, 226, 226);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            width: 750px;
+            height: auto;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:0;
+            margin-bottom: 0;
+            
+        }
+        div.CompSci{
+            margin:0;
+            padding:0;
+            padding-top: 20px;
+            padding-bottom: 70px;
+            height: auto;
+            width: 100%;
+            background-color: rgb(232, 232, 232);
+        }
+        div.Projects{
+            margin-left: 0 auto;
+            margin-right: 0 auto;
+            text-align: center;
+        }
+        div.Block{
+            display: inline-block;
+            vertical-align: top;
+            width:450px;
+            height: auto;
+            
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+        div.Thumbnail{
+            border-top-left-radius:6px;
+            border-top-right-radius:6px;
+            background-color: rgb(242, 242, 242);
+            padding:10px;
+        }
+        div.Pictures{
+            text-align: center;
+            margin-left: 0 auto;
+            margin-right: 0 auto;
+        }
+        div.Container{
+            display: inline-block;
+            vertical-align: top;
+            width:auto;
+            height: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            margin-left: 0 auto;
+            margin-right: 0 auto;
+        }
+        div.Photo{
+            border-radius:6px;
+            border-radius:6px;
+            background-color: rgb(242, 242, 242);
+            padding:20px;
+        }
+        div.Description{
+            border-bottom-left-radius:6px;
+            border-bottom-right-radius:6px;
+            padding:15px;
+            background-color: white;
+            color:black;
+            
+        }
+        div.Photography{
+            margin:0;
+            padding:0;
+            padding-top: 20px;
+            padding-bottom: 70px;
+            height: auto;
+            width: 100%;
+            background-color: rgb(206, 111, 111);
+        }
+        div.Footer{
+            margin:0;
+            padding:0;
+            height: auto;
+            width: 100%;
+            background-color: #fafafa;
+        }
+        body { 
+            margin-top:0;
+            margin-right:0; 
+            margin-left:0; 
+            margin-bottom:0; 
+        } 
+        h1{
+            margin:0;
+            
+            font-size: 10vw; 
+        }
+        h2{
+            margin:0;
+            
+            font-size: 6vw;
+        }
+        h3{
+            margin:0;
+            
+            font-size: 40px;
+        }
+        h4{
+            margin:0;
+            
+            font-size: 1.5vw;
+        }
+        h5{
+            margin:0;
+            font-weight: normal;
+            font-size: 20px;
+        }
+        h6{
+            
+            font-size: 15px;
+              
+        }
+        .Subset:hover{
+            border-color: rgb(11, 137, 146);
+            color: rgb(11, 137, 146);
+        }
+        
+        #landing{
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2vw;
+            padding-top:35vh;
+            padding-bottom: 35vh;
+        }
+        #AboutHeading{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 35px;
+            letter-spacing: .4vw;
+            
+        }
+        #Name{
+            color: rgb(226, 226, 226);
+            font-size: 20px;
+            text-align: center;
+              
+        }
+        .Question{
+            font-family: 'Veranda', monospace;
+            font-size: 15px;
+            letter-spacing: .2vw;
+            text-align: left;
+            color: rgb(11, 137, 146);
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .Answer{
+            font-family: 'Veranda', monospace;
+            font-size: 15px;
+            letter-spacing: .2vw;
+            text-align: left;
+            color: rgb(214, 138, 8);
+            padding-bottom:10px;
+            padding-left: 30px;
+        }
+        #CompSciHeading{
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 35px;
+            letter-spacing: .4vw;
+            
+        }
+        .ProjectDescription{
+            font-size: 15px;
+            font-family: 'Karla', sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            line-height: 20px;
+              
+        }
+        #PhotographyHeading{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 35px;
+            letter-spacing: .4vw;
+            
+        }
+        .Button{
+            border: 3px solid white ;
+            color: white;
+            font-family: sans-serif;
+            font-size: 1vw;
+            text-align: center;
+            font-style: bold;
+            border-radius: 6px;
+            margin: auto;
+            width: 150px;
+            padding-left: 0px;
+            padding-right: 0px;
+            height:auto;
+            
+        }
+        .Button:hover {
+            background-color:white;
+            color: rgb(11, 137, 146);
+        }
+        a:link {
+            color: rgb(11, 137, 146); 
+            background-color: transparent; 
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: rgb(11, 137, 146);
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: darkblue;
+            background-color: transparent;
+            text-decoration:inherit;
+        }
+
+        a:active {
+            color: darkorange;
+            background-color: transparent;
+            text-decoration: inherit;
+        }
+      </style>
+  </head>
+  
+  <body id="Home">
+      <div class="Navigation">
+          <a href="#Home">
+              <div class="Title">
+                  <h6 id="Title">{Jalex}</h6>
+              </div>
+          </a>
+          <a href="#about">
+              <div class="Subset">
+                  <h6 class="SubsetText">/Button</h6>
+              </div>
+          </a>
+          <a href="#Photography">
+              <div class="Subset">
+                  <h6 class="SubsetText">/Photo</h6>
+              </div>
+          </a>
+          <a href="#CompSci">
+              <div class="Subset">
+                  <h6 class="SubsetText">/CompSci</h6>
+              </div>
+          </a>
+          <a href="#About">
+              <div class="Subset">
+                  <h6 class="SubsetText">/About</h6>
+              </div>
+          </a>
+          
+      </div>
+      <div class="Spacer">
+      </div>
+      <div class="Landing">
+          <h1 id="landing">{JALEX}</h1>
+      </div>
+      <div class="About" id="About">
+          <h3 id="AboutHeading">About</h3>
+          <div class="Taskbar">
+              <h4 id="Name">Joshua_Alex.html</h4>
+          </div>
+          <div class="CodeWindow">
+              <h4 class="Question">> Jalex.name()</h4>
+              <h4 class="Answer">   == "Joshua Alex"</h4>
+              <h4 class="Question">> Jalex.origin()</h4>
+              <h4 class="Answer">   == "Minnesota"</h4>
+              <h4 class="Question">> Jalex.high_school()</h4>
+              <h4 class="Answer">   == "Rosemount High School"</h4>
+              <h4 class="Question">> Jalex.hs_graduation()</h4>
+              <h4 class="Answer">   == "2019"</h4>
+              <h4 class="Question">> Jalex.college()</h4>
+              <h4 class="Answer">   == "Unknown"</h4>
+              <h4 class="Question">> Jalex.c_graduation()</h4>
+              <h4 class="Answer">   == "2023"</h4>
+              <h4 class="Question">> Jalex.major()</h4>
+              <h4 class="Answer">   == "Finance + Computer Science"</h4>
+              <h4 class="Question">> Jalex.email()</h4>
+              <h4 class="Answer">   == "Unknown"</h4>
+              <h4 class="Question">> Jalex.experience()</h4>
+              <h4 class="Answer">   == "Unknown"</h4>
+              <h4 class="Question">> Jalex.hobby()</h4>
+              <h4 class="Answer">   == "Photography"[<a target="_blank" href="http://jalexphotography.weebly.com/">Jalex Photography</a>]</h4>
+              
+          </div>
+      </div>
+      <div class="CompSci" id="CompSci">
+          <h3 id="CompSciHeading">Computer Science</h3>
+          <div class="Projects">
+              <div class="Block">
+                <div class="Thumbnail">
+                    <a target="_blank" href="https://alexejosh.github.io/starfield5/">
+                        <img src="StarField.jpeg" alt="StarField" style="width:430px; height:430px;">
+                    </a>
+                </div>
+                <div class="Description">
+                    <h4 class="ProjectDescription"><b>StarField.</b> a program completed using inheritance and interfaces.</h4>
+                </div>
+              </div>
+              <div class="Block">
+                <div class="Thumbnail">
+                    <a target="_blank" href="https://alexejosh.github.io/chemotaxis4/index">
+                        <img src="Chemotaxis.jpeg" alt="Chemotaxis" style="width:430px; height:430px;">
+                    </a>
+                </div>
+                <div class="Description">
+                    <h4 class="ProjectDescription"><b>Chemotaxis.</b> a program creating a simulation of organisms moving away from a starting position, using a random walk, towards a target.</h4>
+                </div>
+              </div>
+              <div class="Block">
+                <div class="Thumbnail">
+                    <a target="_blank" href="https://alexejosh.github.io/dice3/">
+                        <img src="Dice.jpeg" alt="Dice" style="width:430px; height:430px;">
+                    </a>
+                </div>
+                <div class="Description">
+                    <h4 class="ProjectDescription"><b>Dice.</b> a program using OOP (Object Oriented Programming) techniques</h4>
+                </div>
+              </div>
+              <div class="Block">
+                <div class="Thumbnail">
+                    <a target="_blank" href="https://alexejosh.github.io/lightning2/">
+                        <img src="Lightining.jpeg" alt="Lightining" style="width:430px; height:430px;">
+                    </a>
+                </div>
+                <div class="Description">
+                    <h4 class="ProjectDescription"><b>Lightining.</b> a program that uses a random walk to seemingly shoot lightning from one side of the screen to the other every time the mouse is pressed.</h4>
+                </div>
+              </div>
+          </div>
+          <a target="_blank" href="https://github.com/Alexejosh">
+            <div class="Button">
+                <h5>Jalex Github</h5>
+            </div>
+          </a>
+      </div>
+      <div class="Photography" id="Photography">
+          <h3 id="PhotographyHeading">Photography </h3>
+          <div class="Pictures">
+              <div class="Container">
+                <div class="Photo">
+                    <a target="_self" href="footbrigde remastered_lowqual.JPG">
+                        <img src="footbrigde remastered_lowqual.JPG" alt="Footbridge" style="width: 360px; height:240px;">
+                    </a>
+                </div>
+              </div>
+              <div class="Container">
+                <div class="Photo">
+                    <a target="_self" href="DSC_9816_01_lowqual.JPG">
+                        <img src="DSC_9816_01_lowqual.JPG" alt="Suntset at Stone Arch" style="width: 360px; height:240px;">
+                    </a>
+                </div>
+              </div>
+              <div class="Container">
+                <div class="Photo">
+                    <a target="_self" href="gmf_lowqual.JPG">
+                        <img src="gmf_lowqual.JPG" alt="Gold Medal Flour Sign" style="width: 360px; height:240px;">
+                    </a>
+                </div>
+                
+              </div>
+              <div class="Container">
+                <div class="Photo">
+                    <a target="_self" href="DSC_5923_lowqual.JPG">
+                        <img src="DSC_5923_lowqual.JPG" alt="Stillwater Bridge" style="width: 360px; height:240px;">
+                    </a>
+                </div>
+                
+              </div>
+              <div class="Container">
+                <div class="Photo">
+                    <a target="_self" href="IMG_0051_lowqual.JPG">
+                        <img src="IMG_0051_lowqual.JPG" alt="Skyline From Stone Arch" style="width: 360px; height:240px;">
+                    </a>
+                </div>
+                
+              </div>
+              <div class="Container">
+                <div class="Photo">
+                    <a target="_self" href="DSC_5918.01_01_lowqual.JPG">
+                        <img src="DSC_5918.01_01_lowqual.JPG" alt="StillWater Drawbridge" style="width: 360px; height:240px;">
+                    </a>
+                </div>
+                
+              </div>
+          </div>
+          <a target="_blank" href="http://jalexphotography.weebly.com/">
+            <div class="Button">
+                <h5>Jalex Photography</h5>
+            </div>
+          </a>
+      </div>
+      <div class="Footer">
+          <h3>Footer </h3>
+      </div>
+  
+  </body>
+  

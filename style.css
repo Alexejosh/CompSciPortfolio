@@ -1,0 +1,25 @@
+*
+{
+}
+    div.Navigation{
+        position: fixed;
+        height: auto;
+        width: 100%;
+        background-color: aqua;
+    }
+     div.Landing{
+        height: auto;
+        width: 100%;
+        color: antiquewhite;
+    }
+     div.About{
+        height: auto;
+        width: 100%;
+         color: beige;
+    }
+     div.Footer{
+        height: auto;
+        width: 100%;
+         color: blueviolet;
+    }
+
