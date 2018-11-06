@@ -7,11 +7,9 @@ div.Navigation{
             margin:0;
             background-color: #fafafa;
             line-height: 0px;
-            
         }
         div.Title{
             font-family: 'Montserrat', sans-serif;
-            
             letter-spacing: 0.2em;
             text-transform: uppercase;
             text-align: center;
@@ -47,13 +45,9 @@ div.Navigation{
             font-family: 'Montserrat', sans-serif;
             letter-spacing: 0.2em;
             text-transform: uppercase;
-            
             text-align: center;
             display: inline-block; 
-
             color: black;
-            
-            
         }
         .SubsetText{
             vertical-align:middle;
@@ -63,7 +57,10 @@ div.Navigation{
             margin-bottom: 0;
             padding-left: 5px;
             padding-right: 5px;
-            
+        }
+        .Subset:hover{
+            border-color: rgb(11, 137, 146);
+            color: rgb(11, 137, 146);
         }
         div.Spacer{
             position:static;
@@ -81,6 +78,12 @@ div.Navigation{
             background-color: rgb(11, 137, 146);
             text-align: center;
             color:white;
+        }
+        #landing{
+            font-family: 'Montserrat', sans-serif;
+            letter-spacing: 2vw;
+            padding-top:33vh;
+            padding-bottom: 37vh;
         }
         div.About{
             margin:0;
@@ -114,6 +117,38 @@ div.Navigation{
             margin-bottom: 0;
             
         }
+        #AboutHeading{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 35px;
+            letter-spacing: .4vw;
+        }
+        #Name{
+            color: rgb(226, 226, 226);
+            font-size: 20px;
+            text-align: center;
+        }
+        .Question{
+            font-family: 'Veranda', monospace;
+            font-size: 15px;
+            letter-spacing: .2vw;
+            text-align: left;
+            color: rgb(11, 137, 146);
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .Answer{
+            font-family: 'Veranda', monospace;
+            font-size: 15px;
+            letter-spacing: .2vw;
+            text-align: left;
+            color: rgb(214, 138, 8);
+            padding-bottom:10px;
+            padding-left: 30px;
+        }
         div.CompSci{
             margin:0;
             padding:0;
@@ -145,6 +180,48 @@ div.Navigation{
             background-color: rgb(242, 242, 242);
             padding:10px;
         }
+        
+        div.Description{
+            border-bottom-left-radius:6px;
+            border-bottom-right-radius:6px;
+            padding:15px;
+            background-color: white;
+            color:black;
+        }
+        #CompSciHeading{
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 35px;
+            letter-spacing: .4vw;
+        }
+        .ProjectDescription{
+            font-size: 15px;
+            font-family: 'Karla', sans-serif;
+            font-style: normal;
+            font-weight: 100;
+            line-height: 20px;
+        }
+        div.Photography{
+            margin:0;
+            padding:0;
+            padding-top: 20px;
+            padding-bottom: 70px;
+            height: auto;
+            width: 100%;
+            background-color: rgb(206, 111, 111);
+        }
+        #PhotographyHeading{
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            padding-top: 70px;
+            padding-bottom: 35px;
+            letter-spacing: .4vw;
+        }
         div.Pictures{
             text-align: center;
             margin-left: 0 auto;
@@ -167,23 +244,6 @@ div.Navigation{
             border-radius:6px;
             background-color: rgb(242, 242, 242);
             padding:20px;
-        }
-        div.Description{
-            border-bottom-left-radius:6px;
-            border-bottom-right-radius:6px;
-            padding:15px;
-            background-color: white;
-            color:black;
-            
-        }
-        div.Photography{
-            margin:0;
-            padding:0;
-            padding-top: 20px;
-            padding-bottom: 70px;
-            height: auto;
-            width: 100%;
-            background-color: rgb(206, 111, 111);
         }
         div.Footer{
             margin:0;
@@ -232,79 +292,6 @@ div.Navigation{
             font-size: 12px;
               
         }
-        .Subset:hover{
-            border-color: rgb(11, 137, 146);
-            color: rgb(11, 137, 146);
-        }
-        
-        #landing{
-            font-family: 'Montserrat', sans-serif;
-            letter-spacing: 2vw;
-            padding-top:35vh;
-            padding-bottom: 35vh;
-        }
-        #AboutHeading{
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            text-align: center;
-            padding-top: 70px;
-            padding-bottom: 35px;
-            letter-spacing: .4vw;
-            
-        }
-        #Name{
-            color: rgb(226, 226, 226);
-            font-size: 20px;
-            text-align: center;
-              
-        }
-        .Question{
-            font-family: 'Veranda', monospace;
-            font-size: 15px;
-            letter-spacing: .2vw;
-            text-align: left;
-            color: rgb(11, 137, 146);
-            padding-top: 10px;
-            padding-left: 20px;
-        }
-        .Answer{
-            font-family: 'Veranda', monospace;
-            font-size: 15px;
-            letter-spacing: .2vw;
-            text-align: left;
-            color: rgb(214, 138, 8);
-            padding-bottom:10px;
-            padding-left: 30px;
-        }
-        #CompSciHeading{
-            color: black;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            text-align: center;
-            padding-top: 70px;
-            padding-bottom: 35px;
-            letter-spacing: .4vw;
-            
-        }
-        .ProjectDescription{
-            font-size: 15px;
-            font-family: 'Karla', sans-serif;
-            font-style: normal;
-            font-weight: 100;
-            line-height: 20px;
-              
-        }
-        #PhotographyHeading{
-            color: white;
-            font-family: 'Montserrat', sans-serif;
-            text-transform: uppercase;
-            text-align: center;
-            padding-top: 70px;
-            padding-bottom: 35px;
-            letter-spacing: .4vw;
-            
-        }
         .Button{
             border: 3px solid white ;
             color: white;
@@ -318,7 +305,6 @@ div.Navigation{
             padding-left: 0px;
             padding-right: 0px;
             height:auto;
-            
         }
         .Button:hover {
             background-color:white;
