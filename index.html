@@ -26,18 +26,24 @@
     
     <script>
         var h = window.innerHeight;
-        /*
-        var LandingHeight = document.getElementById('LandingHeight').offsetHeight;
-        var AboutHeight = document.getElementById('About').offsetHeight;
-        var CompSciHeight = document.getElementById('CompSci').offsetHeight;
-        var PhotoHeight = document.getElementById('Photo').offsetHeight;
-        */
+        
+        
         window.onscroll = function() {navTrans()};
         function navTrans() {
-            if (document.body.scrollTop > h-60 || document.documentElement.scrollTop > h-60) {
+            if (document.body.scrollTop > h-50 || document.documentElement.scrollTop > h-50) {
                 document.getElementById("nav").className = "NavigationScroll";
+                document.getElementById("Subset4").className = "SubsetScroll";
+                document.getElementById("Subset3").className = "SubsetScroll";
+                document.getElementById("Subset2").className = "SubsetScroll";
+                document.getElementById("Subset1").className = "SubsetScroll";
+                document.getElementById("Title").className = "TitleScroll";
             } else {
                 document.getElementById("nav").className = "Navigation";
+                document.getElementById("Subset4").className = "Subset";
+                document.getElementById("Subset3").className = "Subset";
+                document.getElementById("Subset2").className = "Subset";
+                document.getElementById("Subset1").className = "Subset";
+                document.getElementById("Title").className = "Title";
             }
         }
     </script>
@@ -47,27 +53,27 @@
       <div class="Navigation" id="nav">
           
           <a href="index.html">
-              <div class="Title">
-                  <h6 id="Title">{Jalex}</h6>
+              <div class="Title" id="Title">
+                  <h6 id="TitleText">{Jalex}</h6>
               </div>
           </a>
           <a href="contact.html">
-              <div class="Subset">
+              <div class="Subset" id="Subset4">
                   <h6 class="SubsetText" id="Contact">/Contact</h6>
               </div>
           </a>
-          <a href="index.html#Photography">
-              <div class="Subset">
+          <a href="index.html#PhotographyHome">
+              <div class="Subset" id="Subset3">
                   <h6 class="SubsetText" id="Photo">/Photo</h6>
               </div>
           </a>
-          <a href="index.html#CompSci">
-              <div class="Subset">
+          <a href="index.html#CompSciHome">
+              <div class="Subset" id="Subset2">
                   <h6 class="SubsetText" id="CompSci">/CompSci</h6>
               </div>
           </a>
-          <a href="index.html#About">
-              <div class="Subset">
+          <a href="index.html#AboutHome">
+              <div class="Subset" id="Subset1">
                   <h6 class="SubsetText" id="About">/About</h6>
               </div>
           </a>
@@ -78,7 +84,7 @@
       <div class="Landing" id="LandingHeight">
           <h1 id="landing">{JALEX}</h1>
       </div>
-      <div class="About" id="About">
+      <div class="About" id="AboutHome">
           <h3 id="AboutHeading">About</h3>
           <div class="Taskbar">
               <h4 id="Name">Joshua_Alex.html</h4>
@@ -107,7 +113,7 @@
               
           </div>
       </div>
-      <div class="CompSci" id="CompSci">
+      <div class="CompSci" id="CompSciHome">
           <h3 id="CompSciHeading">Computer Science</h3>
           <div class="Projects">
               <div class="Block">
@@ -157,7 +163,7 @@
             </div>
           </a>
       </div>
-      <div class="Photography" id="Photography">
+      <div class="Photography" id="PhotographyHome">
           <h3 id="PhotographyHeading">Photography </h3>
           <div class="Pictures">
               <div class="Container">
